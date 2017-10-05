@@ -1,10 +1,16 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
-const App = () => {
-    return (
-        <p>My simple React page </p>
-    );
+import SearchBar from './Components/search_bar.js';
+
+class App extends Component {
+    render(){
+        return <SearchBar />
+    };
 };
 
-ReactDOM.render(<App />, document.querySelector('.container'));
+
+
+
+
+ReactDOM.render(<App />, document.querySelector('#root'));
